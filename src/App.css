@@ -1,0 +1,150 @@
+ *{
+  padding: 0;
+  margin: 0;
+ }
+
+body{
+  background: rgb(0, 0, 0);
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 900;
+
+}
+
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.App h2{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.App h1{
+  margin-top: 10px;
+  color:#1ed861;
+  font-size: 50px;
+}
+
+
+
+.SongForm {
+  width: 100%;
+  display: flex;
+  background-color: darkcyan;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-item{
+  width: 20%;
+  height: auto;
+  margin: 10px;
+  margin: 5px;
+  padding: 16px 16px;
+  color:black;
+  text-transform: uppercase;
+}
+
+.form-item::placeholder{
+  color:black;
+  text-transform: uppercase;
+}
+
+option{
+  width: 20%;
+  height: 20px;
+  margin: 10px;
+}
+
+.addInput{
+  width: 8%;
+  height: auto;
+  border-radius: 4px;
+  padding: 15px 1px;
+  border: none;
+  color: black;
+  background-color: #1ed861;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+.filter-box{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.song-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song-table{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.song-header {
+  color: rgb(0, 0, 0);
+  background-color: #1ed861;
+  padding-bottom: 20px !important;
+  line-height: 39px;
+  border: 6px solid rgb(0, 0, 0);
+}
+
+.column-song {
+  width: 25%;
+}
+
+.column-artist {
+  width: 25%;
+}
+
+.column-genre {
+  width: 10%;
+}
+
+.column-rating {
+  width: 10%;
+}
+
+.column-remove {
+  width: 10%;
+}
+
+.listed-song {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  padding-bottom: 20px;
+  line-height: 39px;
+  border: 6px solid rgb(0, 0, 0);
+}
+
+
+.remover{
+
+    background: rgb(255 51 0 / 0%);
+    color: #282c34;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    font-weight: bolder;
+}
