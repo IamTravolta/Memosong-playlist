@@ -1,6 +1,7 @@
 import React from "react";
 import SongForm from "./SongForm"
 import SongList from "./SongList"
+import Filter from "./Filter"
 
 class SongOverview extends React.Component {
 
@@ -54,10 +55,49 @@ class SongOverview extends React.Component {
         })
     }
 
+    FilterGenre = (event) => {
+        this.setState((prevState) => {
+            const songs = prevState.songs
+            const genre = event.target.value
+            const filteredList = songs.filter((songs) => songs.genre === genre)
+            return {
+                filteredSongs: filteredList
+            }
+        })
+    }
+
+    FilterRating = (event) => {
+        this.setState((prevState) => {
+            const songs = prevState.songs
+            const rating = event.target.value
+            const filteredList = songs.filter((songs) => songs.rating === rating)
+            return{
+                filteredSongs: filteredList
+            }
+        })
+    }
+
+    resetFilter = () => {
+        this.setState({
+            filteredSongs: undefined
+        })
+    }
+
     render() {
         return (
             <div className="overview">
+                <h2>Type in your song and click the add button to queue song to list below</h2>
+
+
+
                 <SongForm onSubmit={this.addSong}/>
+                <Filter 
+                songs={this.state.songs}
+                FilterGenre={this.FilterGenre}
+                FilterRating={this.FilterRating}
+                hasFilter={!!this.state.filteredSongs}
+                resetFilter={this.resetFilter}
+                />
                 <table className="song-table">
                     <tbody>
                         <tr className="song-header">  

@@ -66,8 +66,8 @@ class SongForm extends React.Component {
                         <option value = "selecter" hidden>Select Genre</option>
                         <option value = "Hip Hop">Hip Hop</option>
                         <option value = "Classical">Classical</option>
-                        <option value = "Rock">Jazz</option>
-                        <option value = "POP">POP</option>
+                        <option value = "Jazz">Jazz</option>
+                        <option value = "Pop">POP</option>
                         <option value = "R&B">R&B</option>
                     </select>
 
